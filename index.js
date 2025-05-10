@@ -9,7 +9,8 @@ const app = express();
 const PORT = 8004;
 
 //connection
-connectMongoDb("mongodb+srv://gautamchouhan3104:gautam&gautam98@gautammm.bdkodki.mongodb.net/").then(()=>{
+connectMongoDb("mongodb+srv://gautamchouhan3104:gautam%26gautam98@gautammm.bdkodki.mongodb.net/")
+.then(()=>{
     console.log("MongoDb connected !!");
 }).catch((err)=>{
     console.log("Error ",err)
